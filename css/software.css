@@ -1,0 +1,72 @@
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.imgcontacto {
+    margin-top: 50px;
+    width: 800px;
+}
+
+.infocontactos {
+    margin-left: 45px;
+}
+
+.img-left {
+    border-radius: 3%;
+    padding: 10px;
+    width: 300px;
+    max-height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 60px;
+}
+
+.card-img-left {
+    border-radius: 3%;
+    padding: 10px;
+    width: 300px;
+    max-height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.txt {
+    padding: 4%;
+    width: calc(100% - 350px);
+    border-color: aliceblue;
+}
+
+
+.ContenedorExt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.txtI h2,
+.txtI h3 {
+    margin-top: 0;
+}
+
+.txtI {
+    border: 15px solid black;
+    background-color: rgb(206, 220, 236);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.alert.alert-primary {
+    background-color: rgb(241, 93, 113);
+    color: rgb(255, 250, 251);
+    text-align: center;
+    padding: 20px;
+}
+
