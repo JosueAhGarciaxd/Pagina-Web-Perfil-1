@@ -7,13 +7,14 @@
   <title>Tecnología</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/icon.png" alt="Software" width="40px"></a>
+      <a class="navbar-brand" href="#"><img src="img/mundoxd.png" alt="Software" width="40px"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,95 +40,97 @@
   <div class="container mt-4">
     <h1 class="text-center mb-4">En el vertiginoso mundo de la tecnología</h1>
     <br>
-    <p class="lead">En este mundo han emergido destacados emprendedores cuyos logros son verdaderamente asombrosos.
-      Entre estos visionarios se encuentran:</p>
+    <p class="lead text-justify">En este mundo han emergido destacados emprendedores cuyos logros son verdaderamente
+      asombrosos.
+      Entre estos visionarios se encuentran:
+    </p>
 
-    <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="container text-center">
+      <div class="d-flex justify-content-center">
+        <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicadores del carrusel -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#pokemonCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#pokemonCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#pokemonCarousel" data-bs-slide-to="2"></li>
+          </ol>
 
-      <br>
+          <div class="container mt-3">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/250x250.jpg" alt="Pikachu" class="d-block mx-auto" style="max-width: 300px;">
+              </div>
+              <div class="carousel-item">
+                <img src="img/uniones_p15_proteccion_bajo_entorno_tecnologico.jpg_1616332857.jpg" alt="Charizard"
+                  class="d-block mx-auto" style="max-width: 300px;">
+              </div>
+              <div class="carousel-item">
+                <img src="img/universidades_demanda_de_talento_con_perfil_tecnologico.jpg_1616332857.jpg" alt="Squirtle"
+                  class="d-block mx-auto" style="max-width: 300px;">
+              </div>
+            </div>
 
-      <!-- Indicadores del carrusel -->
-      <ol class="carousel-indicators">
-        <li data-bs-target="#pokemonCarousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#pokemonCarousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#pokemonCarousel" data-bs-slide-to="2"></li>
-      </ol>
-
-      <div class="container mt-3">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/250x250.jpg" alt="Pikachu" class="d-block w-50">
-          </div>
-          <div class="carousel-item">
-            <img src="img/uniones_p15_proteccion_bajo_entorno_tecnologico.jpg_1616332857.jpg" alt="Charizard"
-              class="d-block w-50">
-          </div>
-          <div class="carousel-item">
-            <img src="img/universidades_demanda_de_talento_con_perfil_tecnologico.jpg_1616332857.jpg" alt="Squirtle"
-              class="d-block w-50">
+            <a class="carousel-control-prev" href="#pokemonCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#pokemonCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </a>
           </div>
         </div>
-
-        <a class="carousel-control-prev" href="#pokemonCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#pokemonCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </a>
       </div>
     </div>
 
     <br>
     <br>
 
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#pikachuModal">Kevin Systrom</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#charizardModal">Mark Zuckerberg </button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#squirtleModal">Steve Jobs</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#bulbasaurModal">Jen-Hsun Huang</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#bezosModal">Jeff Bezos</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#ekModal">Daniel Ek</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#gatesModal">Bill Gates</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#muskModal">Elon Musk</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#jamybrianModal">Jan Koum y Brian Acton</button>
-      </div>
-      <div class="col-md-3 col-sm-4 col-6 mb-2">
-        <button type="button" class="btn btn-primary btn-block btn-lg" data-bs-toggle="modal"
-          data-bs-target="#larrysergueiModal">Larry Page y Serguéi Brin</button>
-      </div>
 
-
-
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#pikachuModal">Kevin Systrom</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#charizardModal">Mark Zuckerberg</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#squirtleModal">Steve Jobs</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#bulbasaurModal">Jen-Hsun Huang</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#bezosModal">Jeff Bezos</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#ekModal">Daniel Ek</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#gatesModal">Bill Gates</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#muskModal">Elon Musk</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#jamybrianModal">Jan Koum y Brian Acton</button>
+        </div>
+        <div class="col-md-3 col-sm-4 col-6 mb-2">
+          <button type="button" class="btn btn-primary btn-lg custom-btn" data-bs-toggle="modal"
+            data-bs-target="#larrysergueiModal">Larry Page y Serguéi Brin</button>
+        </div>
+      </div>
     </div>
-
     <!-- Modales de cada -->
     <!-- Kevin Systro -->
     <div class="modal fade" id="pikachuModal" tabindex="-1" aria-labelledby="pikachuModalLabel" aria-hidden="true">
@@ -145,6 +148,7 @@
                 </div>
               </div>
             </div>
+            <br>
             <p class="ms-3">Kevin York Systrom, nacido el 30 de diciembre de 1983 en Holliston, Massachusetts, es
               conocido
               como el cofundador de Instagram. Comenzó aprendiendo a programar por las noches y creó Burbn, el prototipo
@@ -174,6 +178,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Nacio el 14 de mayo de 1984 en White Plains, Nueva York, Estados Unidos.
             Es un empresario y programador informático estadounidense. Creador y presidente de la comunidad virtual
             Facebook, en el año 2008, con veintitrés años de edad, se convirtió en el multimillonario más joven de la
@@ -200,6 +205,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Jen-Hsun Huang nació el 17 de febrero de 1963 en Tainan, Taiwán. Es el CEO de NVIDIA
             Corporation, una empresa líder en tecnología de procesamiento de gráficos. NVIDIA se destaca por sus
             innovaciones en inteligencia artificial, computación de alto rendimiento y gráficos de videojuegos,
@@ -218,7 +224,7 @@
           <h5 class="modal-title" id="squirtleModalLabel">Steve Jobs</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-justify">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
@@ -226,6 +232,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Steve Jobs, nacido el 5 de octubre de 1955 en San Francisco, fue un informático y empresario.
             Reconocido como el padre del primer ordenador personal y fundador de Apple Computer, una de las empresas más
             innovadoras del sector tecnológico. Jobs fue una figura influyente en la vertiginosa escalada tecnológica
@@ -238,6 +245,7 @@
     </div>
   </div>
 
+
   <!-- Jeff Bezos -->
   <div class="modal fade" id="bezosModal" tabindex="-1" aria-labelledby="bezosModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -246,7 +254,7 @@
           <h5 class="modal-title" id="bezosModalLabel">Jeff Bezos</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-justify">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
@@ -254,6 +262,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Jeff Bezos, nacido el 12 de enero de 1964 en Albuquerque, Nuevo México, es un empresario y
             magnate estadounidense. Fundó Amazon en 1994, que inicialmente comenzó como una librería en línea y luego se
             expandió para convertirse en una de las empresas de tecnología más grandes del mundo. Bezos también es
@@ -273,7 +282,7 @@
           <h5 class="modal-title" id="ekModalLabel">Daniel Ek</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-justify">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
@@ -281,6 +290,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Daniel Ek, nacido el 21 de febrero de 1983 en Estocolmo, Suecia, es un empresario sueco
             conocido por ser el cofundador y CEO de Spotify, una de las plataformas de streaming de música más populares
             del mundo. Ek fundó Spotify en 2006 con el objetivo de ofrecer acceso a la música de forma legal y sencilla
@@ -300,7 +310,7 @@
           <h5 class="modal-title" id="gatesModalLabel">Bill Gates</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-justify">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
@@ -308,6 +318,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Bill Gates, nacido el 28 de octubre de 1955 en Seattle, Washington, es un empresario,
             filántropo y magnate estadounidense. Es conocido por ser el cofundador de Microsoft Corporation, una de las
             empresas de tecnología más grandes y exitosas del mundo. Gates es también un destacado filántropo y fundador
@@ -326,7 +337,7 @@
           <h5 class="modal-title" id="muskModalLabel">Elon Musk</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-justify">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
@@ -334,6 +345,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Elon Musk, nacido el 28 de junio de 1971 en Pretoria, Sudáfrica, es un empresario, inventor e
             ingeniero conocido por fundar empresas como SpaceX, Tesla, Inc. y Neuralink. Musk ha sido una figura
             influyente en los campos de la tecnología, la energía renovable y la exploración espacial, con el objetivo
@@ -344,31 +356,33 @@
   </div>
 
   <!-- Jan Koum y Brian Acton -->
-  <div class="modal fade" id="jamybrianModal" tabindex="-1" aria-labelledby="jamybrianModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="jamybrianModalLabel">Jan Koum y Brian Acton</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-auto">
-                <img src="img/1621823_407992746011921_1636267576_n.jpg" alt="">
-              </div>
+<div class="modal fade" id="jamybrianModal" tabindex="-1" aria-labelledby="jamybrianModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="jamybrianModalLabel">Jan Koum y Brian Acton</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-justify">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-auto">
+              <img src="img/1621823_407992746011921_1636267576_n.jpg" class="img-fluid rounded" alt="Jan Koum y Brian Acton">
             </div>
           </div>
-          <p class="ms-3">Jan Koum y Brian Acton son conocidos por ser los fundadores de WhatsApp, una de las
-            aplicaciones de mensajería más populares del mundo. WhatsApp fue lanzado en 2009 y rápidamente se convirtió
-            en una herramienta esencial para la comunicación digital, permitiendo a los usuarios enviar mensajes de
-            texto, imágenes, videos y documentos de forma gratuita a través de internet. En 2014, WhatsApp fue adquirido
-            por Facebook por una cantidad récord, consolidando su posición como líder en el mercado de la mensajería
-            instantánea.</p>
         </div>
+        <br>
+        <p class="ms-3">Jan Koum y Brian Acton son conocidos por ser los fundadores de WhatsApp, una de las
+          aplicaciones de mensajería más populares del mundo. WhatsApp fue lanzado en 2009 y rápidamente se convirtió
+          en una herramienta esencial para la comunicación digital, permitiendo a los usuarios enviar mensajes de
+          texto, imágenes, videos y documentos de forma gratuita a través de internet. En 2014, WhatsApp fue adquirido
+          por Facebook por una cantidad récord, consolidando su posición como líder en el mercado de la mensajería
+          instantánea.</p>
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- Larry Page y Serguéi Brin -->
   <div class="modal fade" id="larrysergueiModal" tabindex="-1" aria-labelledby="larrysergueiModalLabel"
@@ -379,7 +393,7 @@
           <h5 class="modal-title" id="larrysergueiModalLabel">Larry Page y Serguéi Brin</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-justify">
           <div class="container">
             <div class="row justify-content-center align-items-center">
               <div class="col-auto">
@@ -387,6 +401,7 @@
               </div>
             </div>
           </div>
+          <br>
           <p class="ms-3">Larry Page y Serguéi Brin son conocidos por ser los cofundadores de Google, una de las
             empresas tecnológicas más importantes del mundo. Fundaron Google en 1998 mientras eran estudiantes de
             posgrado en la Universidad de Stanford. La empresa comenzó como un proyecto de investigación para mejorar la
